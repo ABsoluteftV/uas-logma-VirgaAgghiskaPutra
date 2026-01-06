@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: #111827;
+  color: #fff;
+  padding: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+nav button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #374151;
+  color: #fff;
+}
+
+nav button.active {
+  background: #2563eb;
+}
+
+main {
+  padding: 20px;
+  background: #fff;
+  min-height: 80vh;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 12px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+footer {
+  background: #e5e7eb;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.note {
+  background: #fef3c7;
+  padding: 12px;
+  border-left: 4px solid #f59e0b;
+  margin-top: 16px;
+}
+
+.img-profil { 
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2%;
+    display: block;
+}
+
+.img-profil:hover {
+  transform: scale(1.1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+/* Container foto */
+.profile-card {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+/* Foto */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* penting biar foto tidak gepeng */
+}
