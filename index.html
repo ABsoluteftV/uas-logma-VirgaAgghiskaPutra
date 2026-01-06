@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Logic Challenge – Aplikasi Zakat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logic Challenge – Aplikasi Zakat</h1>
+      <p>UAS Matematika Logika</p>
+
+      <nav>
+        <button onclick="showPage('kalkulator')">Kalkulator</button>
+        <button onclick="showPage('infografis')">Panduan</button>
+        <button onclick="showPage('hukum')">Hukum</button>
+        <button onclick="showPage('dalil')">Dalil</button>
+        <button onclick="showPage('tabel')">Tabel Kebenaran</button>
+        <button onclick="showPage('algoritma')">Algoritma</button>
+        <button onclick="showPage('tentang')" class="active">About</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Tentang App -->
+      <section id="tentang" class="active">
+        <h2>Tentang Aplikasi</h2>
+        <p>
+          Aplikasi ini dibuat sebagai bagian dari
+          <strong>UAS Matematika Logika</strong>
+          dengan tujuan mengimplementasikan konsep logika proposisional dan
+          aljabar Boolean dalam studi kasus penentuan zakat.
+        </p>
+
+        <h3>Data Pembuat</h3>
+        <div>
+          <div><img src="WhatsApp Image 2026-01-04 at 08.55.14.jpeg" class="img-profil" />
+        </div>
+        <ul>
+          <li>Nama Mahasiswa : Virga Agghiska Putra</li>
+          <li>NIM : 256512003</li>
+          <li>Kelas : Teknik Informatika</li>
+          <li>Level Challenge : 2</li>
+        </ul>
+        <hr />
+        <h4>Info Dosen</h4>
+        <div>
+          <div class="profile-card" class="profile-img">🧑‍💼</div>
+        </div>
+        <ul>
+          <li>Dosen : Iin Sholihin, M.Kom</li>
+          <li>NIDN : 5943765666130312</li>
+          <li>
+            Link :
+            <a href="https://kangsolihin.web.id">Kang Solihin Personal Web</a>
+          </li>
+        </ul>
+        <div class="note">
+          <strong>Peringatan:</strong>
+          <span class="red bold"
+            >Jangan Sebar luaskan data ini!</span
+          >
+        </div>
+      </section>
+
+      <section id="infografis">
+        <h2>Panduan</h2>
+        <p>
+          Agar <i>user-friendly</i>, ini adalah panduan untuk pengguna.
+        </p>
+        <div class="red bold">Semoga Kalian Mengerti! ⚠️</div>
+
+        <img src="infografis.jpg" alt="infografis" />
+      </section>
+
+      <!-- Tabel Kebenaran -->
+      <section id="tabel">
+        <h2>Tabel Kebenaran Zakat</h2>
+
+        <table>
+          <tr>
+            <th>Nishab (p)</th>
+            <th>Haul (Q)</th>
+            <th>P ∧ Q</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+            <td>Tidak Wajib</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>true</td>
+            <td>False</td>
+            <td>Tidak Wajib</td>
+          </tr>
+          <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>Fales</td>
+            <td>Tidak Wajib</td>
+          </tr>
+          <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td>Wajib ZAkat</td>
+          </tr>
+        </table>
+
+        <div class="note">
+          <strong>Catatan:</strong>
+          Simak baik baik tabel kebenaran ini.
+        </div>
+      </section>
+
+      <!-- Hukum Logika -->
+      <section id="hukum">
+        <h2>Hukum Logika</h2>
+        <p>
+          Hukum-hukum logika yang saya pakai pada perhitungan zakat ini antara
+          lain:
+        </p>
+
+        <ul>
+          <li>
+            <b>Hukum Nisab</b>
+            <p><i>Zakat emas wajib jika mencapai 85 gram</i></p>
+               </p><i>Jika emas belum mencapai 85 gram, maka tidak wajib zakat</i></p>
+          </li>
+          <li>
+            <b>Hukum Haul</b>
+            <p><i>Emas harus dimiliki selama 1 tahun</i>:</p>
+          </li>
+          <li>
+            <b>Hukum Konjungsi (AND / ∧ / &&)</b>
+            <p><i>Zakat WAJIB jika:Nishab terpenuhi DAN Haul terpenuhi</i></p>
+            <p><i>P = Jumlah emas ≥ 85 gram</i></p>
+            <p><i>Q = Lama kepemilikan ≥ 1 tahun</i></p>
+        </ul>
+      </section>
+
+      <!-- Dalil Logika -->
+      <section id="dalil">
+        <h2>Dalil Zakat</h2>
+        <p>
+          Dalil zakat dan pendapat ulama yang menjadi acuan aplikasi ini antara
+          lain:
+        </p>
+
+        <ul>
+          <li>
+            <b>Dalil Quran</b>
+            <p><i>QS At-Taubah ayat 103 (Dalil Utama Zakat Harta)</i></p>
+            <p><i>Ambillah zakat dari sebagian harta mereka, dengan zakat itu kamu membersihkan dan menyucikan mereka.”</i></p>
+          </li>
+          <li>
+            <b>Dalil Quran</b>
+            <p><i>QS. At-Taubah ayat 34–35 (Ancaman bagi yang Tidak Mengeluarkan Zakat Emas)</i></p>
+            <p><i>Orang-orang yang menyimpan emas dan perak dan tidak menafkahkannya di jalan Allah, maka beritahukanlah kepada mereka azab yang pedih</i> ...</p>
+          </li>
+          <li>
+            <b>Hadits Nabi</b>
+            <p>“Tidak ada seorang pun yang memiliki emas dan perak lalu tidak menunaikan haknya (zakatnya), kecuali pada hari kiamat akan dibuatkan untuknya lempengan-lempengan dari api neraka“<i>HR. Muslim, no.98</i></p>
+          </li>
+          <li>
+            <b>Hadits Nabi</b>
+            <p>“Tidak ada kewajiban zakat pada perak yang kurang dari lima uqiyah.“<i>HR. Bukhari no. 1447</i></p>
+          </li>
+          <li>
+            <b>Ijtihad Ulama</b>
+            <p>[Nama Ulama: Syekh Yusuf al-Qaradawi]</p>
+            <p>mewajibkan zakat gaji dan profesi dengan qiyas pada zakat emas, sebesar 2,5% jika mencapai nishab 85 gram emas. Pendapat ini didukung Wahbah az-Zuhaili dan ditegaskan di Indonesia lewat Fatwa MUI No. 3 Tahun 2003.</p>
+          </li>
+          <li>
+            <b>Ijtihad Ulama</b>
+            <p>[Nama Ulama: Syekh Abdullah bin Bayyah]</p>
+            <p>berpendapat bahwa harta digital wajib dizakati karena termasuk kekayaan bernilai dan dapat disimpan. Kewajibannya 2,5% jika mencapai nishab setara 85 gram emas. Di Indonesia, pandangan ini sejalan dengan ijtihad Dewan Syariah Nasional–MUI.</p>
+          </li>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Flowchart -->
+      <section id="algoritma">
+        <h2>Algoritma Zakat Emas</h2>
+        <p>
+          Algoritma berikut menjelaskan alur logika penentuan kewajiban Zakat Emas.:
+        </p>
+
+        <ol>
+          <li>Mulai</li>
+          <li>Masukkan jumlah emas (gram)</li>
+          <li>Masukkan lama kepemilikan emas (tahun)</li>
+          <li>Tetapkan nishab emas = 85 gram</li>
+          <li>Jika semua YA → Wajib Zakat</li>
+          <li>Tetapkan haul = 1 tahun</li>
+          <li>Jika jumlah emas ≥ nishab dan lama kepemilikan ≥ haul 
+          <p><i>→ zakat wajib</i></p>
+          <p><i>→ hitung zakat = 2,5% × jumlah emas</i></p></li>
+          <p><i>Jika tidak</i></p></li>
+          <p><i>→ zakat tidak wajib</i></p></li>
+          <li>Tampilkan hasil</li>
+          <li>Selesai</li>
+        </ol>
+        <hr />
+      
+      </section>
+      <!-- Kalkulator -->
+      <section id="kalkulator">
+        <h2>Kalkulator Zakat</h2>
+        <p>
+        </p>
+
+        <div class="note">
+          <strong></strong><br />
+          </head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white p-8 rounded-xl shadow-2xl space-y-6">
+
+        <!-- Header dan Identitas -->
+        <header class="text-center pb-4 border-b border-gray-200">
+            <h1 class="text-3xl font-extrabold text-primary uppercase tracking-wider">
+                UAS Logika Matematika
+            </h1>
+            <p class="text-sm text-gray-600 mt-2">
+                Fokus: Pengenalan Logika Dasar (AND/&&) dan Struktur Kondisional (if/else)
+            </p>
+        </header>
+
+        <section class="text-sm text-gray-700 space-y-1 bg-gray-50 p-4 rounded-lg">
+            <p><span class="font-semibold">NIM:</span> 256512003</p>
+            <p><span class="font-semibold">Nama:</span> Virga Agghiska Putra</p>
+            <p><span class="font-semibold">Kelas:</span> Logika Matematika</p>
+            <p><span class="font-semibold">Dosen:</span> Iin, M.Kom</p>
+            <p><span class="font-semibold">Kampus:</span> Masoem University</p>
+        </section>
+
+        <!-- Form Input -->
+        <div class="space-y-4 pt-4">
+            
+            <!-- Input Jumlah Emas -->
+            <div>
+                <!-- Kontrol Checkbox dan Label -->
+                <div class="flex items-center justify-between mb-1">
+                    <label for="jumlahEmas" class="block text-sm font-medium text-gray-700">
+                        Jumlah Emas (gram)
+                    </label>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="hasEmas" onchange="toggleEmasInput(this.checked)" class="h-4 w-4 text-primary rounded border-gray-300 focus:ring-primary cursor-pointer">
+                        <label for="hasEmas" class="text-xs font-semibold text-gray-700 cursor-pointer select-none">
+                            Saya Punya Emas
+                        </label>
+                    </div>
+                </div>
+                <!-- Input Emas, dimulai dalam keadaan disabled dan bernilai 0 -->
+                <input type="number" id="jumlahEmas" min="0" value="0" disabled placeholder="Minimal Nishab: 85 gram" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition duration-150 shadow-sm bg-gray-100 opacity-75">
+            </div>
+
+            <!-- Input Lama Kepemilikan (Haul) -->
+            <div>
+                <label for="lamaKepemilikan" class="block text-sm font-medium text-gray-700 mb-1">
+                    Lama Kepemilikan (tahun - Haul)
+                </label>
+                <input type="number" id="lamaKepemilikan" min="0" placeholder="Minimal Haul: 1 tahun" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition duration-150 shadow-sm">
+            </div>
+
+            <!-- Tombol Cek -->
+            <button onclick="cekKewajibanZakat()" 
+                    class="w-full bg-primary text-white py-3 rounded-lg font-bold text-lg hover:bg-indigo-700 transition duration-300 ease-in-out shadow-lg transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
+                Cek Kewajiban Zakat
+            </button>
+        </div>
+
+        <!-- Area Hasil Logika -->
+        <div id="hasilLogika" class="pt-4 text-center min-h-[5rem] flex items-center justify-center mb-6">
+            <!-- Hasil akan ditampilkan di sini -->
+            <p class="text-gray-500 italic">Masukkan nilai dan klik tombol di atas.</p>
+        </div>
+
+        <!-- Penjelasan Argumen Logis (Tambahan Baru) -->
+        <section id="argumenLogisSection" class="pb-6 border-b border-gray-200">
+            <!-- Argumen Logis akan diisi oleh JavaScript -->
+        </section>
+        
+        <!-- Penjelasan Hukum Logika -->
+        <section class="pt-6 border-t border-gray-200">
+            <h2 class="text-xl font-bold text-gray-800 mb-3">Hukum Logika yang Digunakan</h2>
+            <p class="text-base text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-lg border border-blue-200 shadow-sm">
+                Hukum logika pada perhitungan zakat di atas yaitu hukum **Konjungsi (Conjunction)**. 
+                Konjungsi adalah operasi logika dasar yang menghubungkan dua proposisi atau lebih 
+                dengan menggunakan operator **AND ($\wedge$ / `&&`)**.
+                <br><br>
+                Hasil dari Konjungsi (yaitu status "Wajib Zakat") hanya akan bernilai **Benar (True)** jika dan hanya jika **semua** proposisi yang dihubungkan juga bernilai Benar.
+                <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Proposisi P: Jumlah Emas $\ge$ Nishab (85g)</li>
+                    <li>Proposisi Q: Lama Kepemilikan $\ge$ Haul (1 tahun)</li>
+                </ul>
+                Kewajiban Zakat terjadi jika dan hanya jika **P $\wedge$ Q** bernilai Benar. Jika salah satu kondisi (P atau Q) atau keduanya bernilai Salah (False), maka hasilnya adalah "Tidak Wajib Zakat" (False).
+            </p>
+        </section>
+
+    </div>
+
+    <!-- Script untuk menjalankan fungsi saat DOM sudah siap (opsional) -->
+    <script>
+        // Set nilai default untuk Lama Kepemilikan (Haul) untuk pengujian cepat
+        document.getElementById('lamaKepemilikan').value = 2;
+        
+    </script>
+        </div>
+      </section>
+    </main>
+
+    <footer>UAS Matematika Logika © 2025</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
